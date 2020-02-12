@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Readability extension for SEOs",
+  "description": "Find the sentences that are longer than 20 words.",
+  "version": "1.0",
+  "author": "hello@cemakbulut.com",
+
+  "permissions": [
+    "activeTab"
+   ],
+
+  "content_scripts": [
+
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "run_at": "document_start",
+      "js": ["assets/jquery-3.3.1.min.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+
+
+} 
